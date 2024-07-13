@@ -1,0 +1,30 @@
+Write a program to print Hello World with tab
+
+Input Format
+
+NA
+
+Constraints
+
+NA
+
+Output Format
+
+The output prints the string.
+
+Sample Output 0
+
+Hello World    Hello World
+
+
+solution:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        System.out.println("Hello World"+"\t"+"Hello World");
+    }
+}
