@@ -1,0 +1,50 @@
+Write a program to get a float value from the user and display it in the below-mentioned format.
+
+HINT: Use ceil() and floor() functions from the header file.
+
+Input Format
+
+Input consists of one float value.
+
+Constraints
+
+NA
+
+Output Format
+
+The output consists of one integer, its rounded-up value, and its rounded-down value.
+
+Sample Input 0
+
+54.5
+Sample Output 0
+
+54
+55
+54
+
+
+
+
+solution:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        double d=sc.nextDouble();
+        double a=Math.ceil(d);
+        double b=Math.floor(d);
+        System.out.println((int)b);
+        System.out.println((int)a);
+        System.out.println((int)b);
+        
+        
+        
+        
+        
+    }
+}
