@@ -1,0 +1,54 @@
+HackerRank Home
+HackerRank
+|
+Prepare
+Certify
+Compete
+Apply
+Search
+ 
+All Contests  Fundamentals of Programming  Input & Output - ASCII Values - II
+Input & Output - ASCII Values - II
+Problem
+Submissions
+Leaderboard
+Discussions
+Write a program to get a number (ASCII value) as input and print its equivalent character.
+
+Input Format
+
+Input consists of one integer
+
+Constraints
+
+NA
+
+Output Format
+
+Output prints the character
+
+Sample Input 0
+
+119
+Sample Output 0
+
+w
+Sample Input 1
+
+105
+
+
+
+solution:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.println((char)a);
+    }
+}
