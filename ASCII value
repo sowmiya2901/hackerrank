@@ -1,0 +1,36 @@
+Write a program to get a character as an input and print its ASCII value.
+
+Input Format
+
+Input consists of one character
+
+Constraints
+
+Character should be an alphabet both lowercase & uppercase
+
+Output Format
+
+Output prints the ascii value
+
+Sample Input 0
+
+a
+Sample Output 0
+
+97
+
+
+
+solution:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        char c=sc.next().charAt(0);
+        System.out.println((int)c);
+    }
+}
