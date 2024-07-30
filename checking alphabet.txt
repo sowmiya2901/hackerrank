@@ -1,0 +1,43 @@
+PROBLEM:
+
+ Jeni and her brothers Joseph and John found themselves in Narnia, the land of magic during World War III. Narnia was completely filled with gentle people and also it is where the trees sing, the fauns dance, and animals talk. Being from England, Jeni wanted to teach the kids the English language. She started teaching them the alphabet but then she remembered that she might have to go to London and felt sad. John and Joseph discussed with each other and suggested an idea to Jeni to come up with a program so that the kids can learn on their own when she was not there. Can you help Jeni to write a program to check whether the given character is a vowel or consonant or alphabet?
+
+Input Format
+
+The input consists of a character.
+
+Constraints
+
+NA
+
+Output Format
+
+The output should be any one of the below-given strings. Vowel or Consonant or Not an alphabet.
+
+Sample Input 0
+
+e
+Sample Output 0
+
+Vowel
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        char c=sc.next().charAt(0);
+        if(c=='a' ||c=='e' ||c=='i' ||c=='o' ||c=='u' ||c=='A' ||c=='E' ||c=='I' ||c=='O' ||c=='U' ){
+                System.out.println("Vowel");
+        }else if (((int)c>=66 && (int)c<=90)||((int)c>=98 &&(int) c<=122)){
+            System.out.println("Consonant");
+        }else{
+            System.out.println("Not an alphabet");
+        }
+    }
+}

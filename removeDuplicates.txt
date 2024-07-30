@@ -1,0 +1,68 @@
+Problem:
+
+Jack and John were investigating a murder and the murderer was Ms.Isha Adler. She wanted Jack to find her by solving the puzzles. Jack was able to solve all but one. The last task was to write a program to remove duplicate elements from an array. Can you help Jack?
+
+Input Format
+
+Input consists of 1 integer and 1 array. The first integer corresponds to the size of the array. The next integers correspond to the elements in the array.
+
+Constraints
+
+NA
+
+Output Format
+
+The output consists of an array with no duplicate elements.
+
+Sample Input 0
+
+5
+1
+2
+2
+3
+4
+Sample Output 0
+
+1
+2
+3
+4
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        if(n==1){
+            System.out.print(arr[0]);
+        }else{
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i]==0)
+                    break;
+                if(arr[i]==arr[j]){
+                    
+                    arr[j]=0;
+                }
+            }
+        }
+        }
+        for(int i=0;i<n;i++){
+            if(arr[i]!=0)
+                System.out.println(arr[i]);
+            
+        }
+    }
+}

@@ -1,0 +1,48 @@
+Problem:
+
+Kamal was traveling from Korea to USA and he was not aware of the currency system of USA. Can you please help him to add two dollars and cents?
+
+Note: 1 dollar=100 cents
+
+Input Format
+
+Input consists of 4 integers. The first two inputs correspond to the value of the first dollar and cent. The next two inputs correspond to the value of the second dollar and cent.
+
+Constraints
+
+NA
+
+Output Format
+
+The output should print the sum of dollars and cents.
+
+Sample Input 0
+
+30
+10
+140
+99
+Sample Output 0
+
+171
+9
+
+SOLUTION:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        int cen=((a*100)+b)+((c*100)+d);
+        System.out.println(cen/100);
+        System.out.println(cen%100);
+        
+    }
+}

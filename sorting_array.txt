@@ -1,0 +1,64 @@
+problem:
+
+Kailash and his daughter Keerthana were arguing about who is the smartest person in the family. Kailash who is a world-known Computer Engineer asked Keerthana who has not yet completed college to write a program to sort the given array in ascending order. Can you help Keerthana?
+
+Input Format
+
+Input consists of 1 integer and 1 array. The integer corresponds to the size of the array.
+
+Constraints
+
+NA
+
+Output Format
+
+The output consists of an array of elements after sorting.
+
+Sample Input 0
+
+5
+54
+68
+25
+14
+74
+Sample Output 0
+
+The Sorted array is:
+14
+25
+54
+68
+74
+
+
+solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i]>arr[j]){
+                    int t=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=t;
+                }
+            }
+        }
+          System.out.println("The Sorted array is:");
+        for(int i=0;i<n;i++){
+            System.out.println(arr[i]);
+        }
+    }
+}
